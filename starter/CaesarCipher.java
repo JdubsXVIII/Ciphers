@@ -1,7 +1,7 @@
 
 public class CaesarCipher extends Cipher{
 	private final static int NUM_LETTERS = 26;
-	private final int shiftAmount;
+	private int shiftAmount;
 	
 	/**
 	 * @param amt - the distance to shift letters when encrypting
@@ -11,7 +11,7 @@ public class CaesarCipher extends Cipher{
 	}
 	
 	public CaesarCipher(CaesarCipher other){
-		// TODO: complete this copy constructor
+		new CaesarCipher(other.shiftAmount);
 	}
 	
 	@Override
