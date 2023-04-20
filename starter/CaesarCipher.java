@@ -11,7 +11,7 @@ public class CaesarCipher extends Cipher{
 	}
 	
 	public CaesarCipher(CaesarCipher other){
-		new CaesarCipher(other.shiftAmount);
+		this.shiftAmount = other.shiftAmount;
 	}
 	
 	@Override
